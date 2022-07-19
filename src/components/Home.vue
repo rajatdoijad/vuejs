@@ -1,7 +1,7 @@
 <template>
   <h1> Home Component {{"anil".length}}</h1>
   <button v-on:click="getName('Button 1 clicked')">Click Me</button>
-   <button v-on:mousemove="getName('Button 1 clicked')">Click Me</button>
+   <button v-on:mousemove="getName('Button 2 clicked')">Click Me</button>
   
   
   <h1>Name {{getName("Naruto")}}</h1>
