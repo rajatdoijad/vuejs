@@ -1,27 +1,49 @@
+
 <template>
-  <h1> Home Component {{"anil".length}}</h1>
-  <button v-on:click="getName('Button 1 clicked')">Click Me</button>
-   <button v-on:mousemove="getName('Button 2 clicked')">Click Me</button>
+   <h1>Get the input field value</h1>
+   <h3>Technology</h3>
+    <label for="java">java</label>
+    <input type="checkbox" value="java" v-model="technology" id="java">
+
+    <label for="php">php</label>
+    <input type="checkbox" value="php" v-model="technology" id="php">
+    
+    <label for="node">node</label>
+    <input type="checkbox" value="node" v-model="technology" id="node">
+     <br/><br/>
+     <h3>who am i</h3>
+     <label for="student">Student</label>
+    <input type="radio" value="student"  v-model="who" name="who" id="student">
+     
+      <label for="developer">Developer</label>
+    <input type="radio" value="developer" v-model="who" name="who"  id="developer">
+     
+       <br/><br/>
+   
+    <h4>Selected Technology: {{technology}}</h4>
+      <h4>I am a: {{who }}</h4> 
   
   
-  <h1>Name {{getName("Naruto")}}</h1>
+  
 </template>
 <script>
 export default {
       name:'homeComponent',
-      data(){
-        return{
-            email:'anil@joke.com',
-            mobile:234567890,
-            getName:function(){
-              alert("Hello ");
-            }
+      data()
+      {
+        return {
+            technology: [],
+            who: null
         }
       }
-}
+   
+      }
+    
+   
+
 </script>
 <style scoped>
 h1{
-    color: orangered;
+    color:orangered;
 }
 </style>
