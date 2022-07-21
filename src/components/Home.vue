@@ -1,4 +1,3 @@
-
 <template>
    <h1>Get the input field value</h1>
    <h3>Technology</h3>
@@ -19,9 +18,9 @@
     <input type="radio" value="developer" v-model="who" name="who"  id="developer">
      
        <br/><br/>
-   
-    <h4>Selected Technology: {{technology}}</h4>
-      <h4>I am a: {{who }}</h4> 
+      
+    <h3>Selected Technology: {{technology}}</h3>
+  
   
   
   
