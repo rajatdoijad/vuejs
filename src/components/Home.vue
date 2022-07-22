@@ -17,9 +17,9 @@
       <label for="developer">Developer</label>
     <input type="radio" value="developer" v-model="who" name="who"  id="developer">
      
-     
+     <br>
       
-    <h3>Selected Technology: {{technology}}</h3>
+    <h3>Selected Technology1: {{technology}}</h3>
   
   
   
